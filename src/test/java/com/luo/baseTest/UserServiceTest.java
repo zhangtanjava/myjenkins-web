@@ -1,9 +1,10 @@
-package com.luo.service;
+package com.luo.baseTest;
 
 import org.junit.Test;  
-import org.springframework.beans.factory.annotation.Autowired;  
-import com.luo.baseTest.SpringTestCase;  
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.luo.domain.User;
+import com.luo.service.UserService;
 
 public class UserServiceTest extends SpringTestCase {
 
@@ -14,6 +15,6 @@ public class UserServiceTest extends SpringTestCase {
     public void selectUserByIdTest(){  
         User user = userService.selectUserById(1);  
         System.out.println("!!!!!!!!!"+user.getUserName() + ":" + user.getUserPassword());
-        logger.info(">>>>>>>>>"+user.getUserName() + ":" + user.getUserPassword());
+        logger.info("!!!!!!!!!"+user.getUserName() + ":" + user.getUserPassword());
     }  
 }
