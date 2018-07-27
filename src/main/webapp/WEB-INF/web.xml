@@ -7,13 +7,13 @@
     <display-name>Archetype Created Web Application</display-name>
  <servlet>  
         <servlet-name>Log4JTestServlet</servlet-name>  
-        <servlet-class>com.mucfc.Log4JTestServlet</servlet-class>  
+        <servlet-class>com.luo.servlet.Log4JTestServlet</servlet-class>  
     </servlet>  
 
     <!--用来启动 log4jConfigLocation的servlet -->  
     <servlet>  
         <servlet-name>Log4JInitServlet</servlet-name>  
-        <servlet-class>com.mucfc.Log4JInitServlet</servlet-class>  
+        <servlet-class>com.luo.servlet.Log4JInitServlet</servlet-class>  
         <init-param>  
             <param-name>log4j-properties-location</param-name>  
             <param-value>/WEB-INF/classes/log4j.properties</param-value>  
